@@ -1,0 +1,58 @@
+@import '../../assets/scss/variables';
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding-right: 40px;
+    padding-left: 44px;
+    width: 100%;
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: $headers-color;
+        font-size: 25px;
+    }
+
+    h2 {
+        color: $headers-color;
+        font-weight: 600;
+        font-size: 28px;
+    }
+  
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        height: 100px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .header-right {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        gap: 30px;
+        margin-left: 60px;
+    }
+  
+    .search-bar input {
+      padding: 10px;
+      border-radius: $border-radius;
+      border: 1px solid #ccc;
+      min-width: 200px;
+    }
+  
+    .user-profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  

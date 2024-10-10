@@ -1,0 +1,51 @@
+@import './variables';
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@900&display=swap');
+
+
+/* Общие стили */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+.app-container {
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-color;
+}
+
+.profile {
+    margin-left: 40px;
+    margin-top: 31px;   
+    margin-right: 40px;
+    background-color: #f9f9f9; 
+    width: 100%;
+    border-radius: 25px;
+  }
+button {
+  background-color: #005eff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0041b3;
+  }
+}
+
+/* Импортируем стили компонентов */
+@import '../../components/Header/header.scss';
+@import '../../components/Sidebar/sidebar.scss';
+@import '../../components/ProfileForm/profileForm.scss';
+@import '../../components/TabMenu/tabMenu.scss';

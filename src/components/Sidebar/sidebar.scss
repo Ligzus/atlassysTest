@@ -1,0 +1,52 @@
+@import '../../assets/scss/variables';
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding-left: 44px;
+    padding-right: 23px;
+    padding-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        color: #B1B1B1;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 10px 0px;
+        cursor: pointer;
+        &:hover {
+          background-color: #eaeaea;
+        }
+      }
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+  
+    @media (max-width: 768px) {
+      width: 100px;
+  
+      ul li {
+        padding: 5px;
+      }
+  
+      .mobile-menu {
+        display: block;
+      }
+    }
+  }
+  
